@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heall Track - Usario</title>
+    <link href="Content/toastr.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap.css" rel="stylesheet"/>
+    <link href="Content/sweetalert2.css" rel="stylesheet"/>
+    <link href="Content/slick.css" rel="stylesheet"/>
+    <link href="Content/slick-theme.css" rel="stylesheet"/>
+    <link href="Content/bootstrap-datepicker.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,700" rel="stylesheet">
+    <link href="Content/style.css" rel="stylesheet" />
+    <link href="Content/fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="Content/fonts/font-awesome-4.7.0/css/all.css" rel="stylesheet" />
+    <link href="Content/jquery.rateyo.min.css" rel="stylesheet" />
+    <style>
+        .slick-prev:before, .slick-next:before {
+            color: black !important;
+        }
+
+        #navbarNavDropdown li a {
+            color: #ffffff !important;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #ffffff !important;
+        }
+        .navbar-nav li.dropdown-submenu:hover > ul.dropdown-menu {
+            display: block;
+        }
+        .dropdown-submenu {
+            position: relative;
+        }
+        .dropdown-submenu > .dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-top: -6px;
+        }
+
+        /* rotate caret on hover */
+        .dropdown-menu > li > a:hover:after {
+            text-decoration: underline;
+            transform: rotate(-90deg);
+        }
+
+        .slick-slide img {
+            height: 200px !important;
+        }
+
+        .swal2-popup .swal2-title, .swal2-popup .swal2-content {
+            color: #1A1446;
+        }
+    </style>
+    <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+   
+    <script src="Scripts/modernizr-3.6.0.js"></script>
+
+</head>
+<body>
+    <!-- Header e navbar -->
+    <header class="header-Healf-Track">
+        <div class="container">
+            <div class="row col-sm-12 col-md-12" style="margin-bottom:10px;">
+                <div class="col-lg-3 col-md-12 col-sm-12">
+                    <a href="home.html">
+                        <img src="Images/logo.png" class="img-fluid" alt="Logo" style="max-width: 300px;">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="row" style="margin-top:10px;">
+                        <div class="col-lg-12">
+                            <div class="row user-header">
+                                <div class="col-md-2 col-md-2">
+                                    <p><i class="far fa-user"></i></p>
+                                </div>
+                                <div class="col-lg-10 col-md-6 col-sm-10 col-xs-10">
+                                    <p> Olá, rony</p>
+                                    <p>Bem-vindo!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-1 col-sm-12"  style="margin-top:16px;">
+                    <form action="index.html" class="navbar-right" id="logoutForm" method="post">
+                        <div class="row pesquisa">
+                            <button type="submit" class="btn btn-default btn-fechar" style="margin-right: 10px; padding-top: 10px;padding-bottom: 7px; width: 100%;">Sair <i class="fas fa-sign-out-alt" style=" margin-left: 2px; font-size: 13px;"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav style="background: #1d088c;" class="navbar navbar-expand-lg navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" navbarDropdownMenuLink id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Gerenciamento
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="border: none; background: #1d088c">
+                            <a class="dropdown-item" href='usuario.html'>Usuário</a>
+                            <a class="dropdown-item" href='dicas.html'>Dicas</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href='historico.html'>Histórico</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="treinamento.html">Treinamento</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dicas.html">Dicas</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+      <!-- Iníco do conteúdo -->
+    <form id="form-usuario" style="min-height: 800px;" enctype="multipart/form-data">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" style="margin-top:30px;">
+                    <div class="bloco-pecas-2 bloc-title" style="min-height:200px !important;">
+                        <h3>Novo Usuário</h3>
+                        <hr size="30">
+                        <div role="form">
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <label><b>Nome Completo</b></label>
+                                        <input name="NomeCompleto" class="form-control" type="text" maxlength="256">
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <label><b>Idade</b></label>
+                                        <input name="Idade" class="form-control" type="datetime-local" maxlength="256">
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <label><b>Email</b></label>
+                                        <input name="Email" class="form-control" type="email" maxlength="256">
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <label><b>Sexp</b></label>
+                                        <select name="Sexo" class="form-control" id="opt-usuario-seso">
+                                            <option value="">- Selecione o Sexo -</option>
+                                            <option value="1">Maculio</option>
+                                            <option value="2">Feminino</option>
+                                        </select>    
+                                    </div>
+                                </div>
+
+                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <label><b>Perfil</b></label>
+                                        <select name="Perfil" class="form-control" id="opt-usuario-perfil">
+                                            <option value="">- Selecione um Perfil -</option>
+                                            <option value="1">Sedentário</option>
+                                            <option value="2">Praticante de esporte - ocasional</option>
+                                            <option value="4">Praticante de esporte - regular</option>
+                                            <option value="5">Esportista profissional</option>
+                                        </select>    
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <label><b>Peso</b></label>
+                                        <select name="Peso" class="form-control" id="opt-usuario-peo">
+                                        <option value="">Muito magro</option>
+                                        <option value="">Magro</option>
+                                        <option value="">Peso ideal</option>
+                                        <option value="">Acima do peso</option>
+                                        <option value="">Obeso</option>
+                                        <option value="">Obsidade móbida</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row buttons-opcao">
+                                <div class="col-xs-3 col-md-3 col-lg-3"><a href="#" id="btn-gravar-usuario" class="btn btn-pmint btn-acoes">Salvar</a></div>
+                                <div class="col-xs-3 col-md-3 col-lg-3"><a href="javascript:history.back()" id="btn-voltar" class="btn btn-pvermelho btn-fechar">Fechar</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <!-- Fim do conteúdo -->
+
+    <footer id="myFooter">
+        <div class="footer-copyright">
+            <p>&copy; 2021 - Rony Boccoli - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="Scripts/jquery-3.6.0.js"></script>
+    <script src="Scripts/promise.min.js"></script>
+    <script src="Scripts/sweetalert2.js"></script>
+    <script src="Scripts/slick.js"></script>
+    <script src="Scripts/umd/popper.js"></script>
+    <script src="Scripts/umd/popper-utils.js"></script>
+    <script src="Scripts/respond.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/jquery.mask.js"></script>
+    <script src="Scripts/bootstrap-datepicker.min.js"></script>
+    <script src="Scripts/locales/bootstrap-datepicker.pt-BR.min.js"></script>
+    <script src="Scripts/script.js"></script>
+    <script src="Scripts/util.js"></script>
+    <script src="Scripts/clipboard.min.js"></script>
+    <script src="Scripts/jquery.rateyo.min.js"></script>
+
+</body>
+</html>

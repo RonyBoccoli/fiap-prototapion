@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heall Track - Index</title>
+    <link href="Content/toastr.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap.css" rel="stylesheet"/>
+    <link href="Content/sweetalert2.css" rel="stylesheet"/>
+    <link href="Content/slick.css" rel="stylesheet"/>
+    <link href="Content/slick-theme.css" rel="stylesheet"/>
+    <link href="Content/bootstrap-datepicker.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,700" rel="stylesheet">
+    <link href="Content/style.css" rel="stylesheet" />
+    <link href="Content/fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="Content/fonts/font-awesome-4.7.0/css/all.css" rel="stylesheet" />
+    <link href="Content/jquery.rateyo.min.css" rel="stylesheet" />
+    <style>
+        .slick-prev:before, .slick-next:before {
+            color: black !important;
+        }
+
+        #navbarNavDropdown li a {
+            color: #ffffff !important;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #ffffff !important;
+        }
+        .navbar-nav li.dropdown-submenu:hover > ul.dropdown-menu {
+            display: block;
+        }
+        .dropdown-submenu {
+            position: relative;
+        }
+        .dropdown-submenu > .dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-top: -6px;
+        }
+
+        /* rotate caret on hover */
+        .dropdown-menu > li > a:hover:after {
+            text-decoration: underline;
+            transform: rotate(-90deg);
+        }
+
+        .slick-slide img {
+            height: 200px !important;
+        }
+
+        .swal2-popup .swal2-title, .swal2-popup .swal2-content {
+            color: #1A1446;
+        }
+    </style>
+    <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+   
+    <script src="Scripts/modernizr-3.6.0.js"></script>
+
+</head>
+<body>
+    <!-- Header e navbar -->
+    <header class="header-Healf-Track">
+        <div class="container">
+            <div class="row col-sm-12 col-md-12" style="margin-bottom:10px;">
+                <div class="col-lg-3 col-md-12 col-sm-12">
+                    <a href="home.html">
+                        <img src="Images/logo.png" class="img-fluid" alt="Logo" style="max-width: 300px;">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="row" style="margin-top:10px;">
+                        <div class="col-lg-12">
+                            <div class="row user-header">
+                                <div class="col-md-2 col-md-2">
+                                    <p><i class="far fa-user"></i></p>
+                                </div>
+                                <div class="col-lg-10 col-md-6 col-sm-10 col-xs-10">
+                                    <p> Olá, rony</p>
+                                    <p>Bem-vindo!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-1 col-sm-12"  style="margin-top:16px;">
+                    <form action="index.html" class="navbar-right" id="logoutForm" method="post">
+                        <div class="row pesquisa">
+                            <button type="submit" class="btn btn-default btn-fechar" style="margin-right: 10px; padding-top: 10px;padding-bottom: 7px; width: 100%;">Sair <i class="fas fa-sign-out-alt" style=" margin-left: 2px; font-size: 13px;"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav style="background: #1d088c;" class="navbar navbar-expand-lg navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" navbarDropdownMenuLink id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Gerenciamento
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="border: none; background: #1d088c">
+                            <a class="dropdown-item" href='usuario.html'>Usuário</a>
+                            <a class="dropdown-item" href='dicas.html'>Dicas</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href='historico.html'>Histórico</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="treinamento.html">Treinamento</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dicas.html">Dicas</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <!-- Início do conteúdo -->
+    
+<style>
+    .slick-slide {
+        /*height: 200px !important;*/
+    }
+
+    .slick-slide img {
+            height: 200px !important;
+    }
+   
+    .swal2-icon.swal2-warning {
+        border-color: #FFD000;
+        color: #FFD000;
+    }
+    
+    .swal2-title {
+    }
+    
+    .swal2-popup .swal2-title, .swal2-popup .swal2-content {
+        color: #1A1446;
+    }
+    
+</style>
+<div class="container ajustes-mobile">
+    <div class="row">
+        <div class="col-lg-12 ajustes-mobile">
+            <!-- Carousel -->
+            <div id="carouselExampleIndicators" class="row carousel slide" data-ride="carousel">
+                <div class="col-lg-12 ajustes-mobile">
+                    <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class=active></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1" class></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2" class></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img class="d-block img-fluid" src="Images/Banners/ioga.jpg" alt="Yoga" />
+                        </div>
+                        <div class="carousel-item ">
+                            <img class="d-block img-fluid" src="Images/Banners/corrida.jpg" alt="Corrida" />
+                        </div>
+                        <div class="carousel-item ">
+                            <img class="d-block img-fluid" src="Images/Banners/ciclismo.jpg" alt="Natação" />
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+    <!-- Opções -->
+    <div id="opcoes" class="row col-lg-12 index-opcoes div-list">
+        <div class="row col-lg-12 opcoes-produtos">
+            <div class="col-sm-6 col-md-6">
+                <a class="texto-opcoes" href="treinamento.html">   
+                    <div class="card">       
+                        <div class="h-100">           
+                            <img class="card-img-top img-fluid" src="Images/ciclismo.jpg">       
+                        </div>       
+                        <div class="card-body d-flex flex-column box-opcoes">           
+                            <div class="mt-auto" style="padding: 20px 10px; color: #676767; height: 90px; border-top: 1px solid #e6e6e6;">               
+                                <p style="font-weight: 300 !important; font-size: 12px; margin-bottom: 0rem !important; margin-left: 10px !important; text-decoration: none !important;">
+                                    Aventure-se                
+                                </p> 
+                                <p style="color: #787878; font-size: 14px; font-weight: 600 !important; margin-bottom: 0rem !important; margin-left: 10px !important;">
+                                    Ciclismo
+                                </p>
+                            </div>       
+                        </div>   
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <a class="texto-opcoes" href="treinamento.html">   
+                    <div class="card">       
+                        <div class="h-100">           
+                            <img class="card-img-top img-fluid" src="Images/corrida.jpg">       
+                        </div>       
+                        <div class="card-body d-flex flex-column box-opcoes">           
+                            <div class="mt-auto" style="padding: 20px 10px; color: #676767; height: 90px; border-top: 1px solid #e6e6e6;">               
+                                <p style="font-weight: 300 !important; font-size: 12px; margin-bottom: 0rem !important; margin-left: 10px !important; text-decoration: none !important;">
+                                    Vá mais longe               
+                                </p> 
+                                <p style="color: #787878; font-size: 14px; font-weight: 600 !important; margin-bottom: 0rem !important; margin-left: 10px !important;">
+                                    Corrida
+                                </p>
+                            </div>       
+                        </div>   
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <a class="texto-opcoes" href="treinamento.html">   
+                    <div class="card">       
+                        <div class="h-100">           
+                            <img class="card-img-top img-fluid" src="Images/natacao.jpg">       
+                        </div>       
+                        <div class="card-body d-flex flex-column box-opcoes">           
+                            <div class="mt-auto" style="padding: 20px 10px; color: #676767; height: 90px; border-top: 1px solid #e6e6e6;">               
+                                <p style="font-weight: 300 !important; font-size: 12px; margin-bottom: 0rem !important; margin-left: 10px !important; text-decoration: none !important;">
+                                    Refesque-se               
+                                </p> 
+                                <p style="color: #787878; font-size: 14px; font-weight: 600 !important; margin-bottom: 0rem !important; margin-left: 10px !important;">
+                                    Natação
+                                </p>
+                            </div>       
+                        </div>   
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <a class="texto-opcoes" href="treinamento.html">   
+                    <div class="card">       
+                        <div class="h-100">           
+                            <img class="card-img-top img-fluid" src="Images/ioga.jpg">       
+                        </div>       
+                        <div class="card-body d-flex flex-column box-opcoes">           
+                            <div class="mt-auto" style="padding: 20px 10px; color: #676767; height: 90px; border-top: 1px solid #e6e6e6;">               
+                                <p style="font-weight: 300 !important; font-size: 12px; margin-bottom: 0rem !important; margin-left: 10px !important; text-decoration: none !important;">
+                                    Limpe sua mente               
+                                </p> 
+                                <p style="color: #787878; font-size: 14px; font-weight: 600 !important; margin-bottom: 0rem !important; margin-left: 10px !important;">
+                                    Yoga
+                                </p>
+                            </div>       
+                        </div>   
+                    </div>
+                </a>
+            </div>
+        </div>  
+    </div>
+</div>
+
+    <!-- Fim do conteúdo -->
+
+    <footer id="myFooter">
+        <div class="footer-copyright">
+            <p>&copy; 2021 - Rony Boccoli - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title"></h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-fechar" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modalLoad" role="dialog">
+        <img src="/Images/_load.gif" class="img-load" />
+    </div>
+
+    <script src="Scripts/jquery-3.6.0.js"></script>
+    <script src="Scripts/promise.min.js"></script>
+    <script src="Scripts/sweetalert2.js"></script>
+    <script src="Scripts/slick.js"></script>
+    <script src="Scripts/umd/popper.js"></script>
+    <script src="Scripts/umd/popper-utils.js"></script>
+    <script src="Scripts/respond.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/jquery.mask.js"></script>
+    <script src="Scripts/bootstrap-datepicker.min.js"></script>
+    <script src="Scripts/locales/bootstrap-datepicker.pt-BR.min.js"></script>
+    <script src="Scripts/script.js"></script>
+    <script src="Scripts/util.js"></script>
+    <script src="Scripts/_searchList.js"></script>
+    <script src="Scripts/clipboard.min.js"></script>
+    <script src="Scripts/jquery.rateyo.min.js"></script>
+    
+<script type="text/javascript">
+        $(document).ready(function () {
+            pagina.iniciar();
+        });
+
+        var pagina = {
+            iniciar: function () {
+                pagina.carregarControles();
+                pagina.carregarEventos();
+             
+      
+            },
+           
+        };
+</script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-120506200-1');
+
+        $(document).ready(function () {
+            pagina_layout.iniciar();
+        });
+
+        var pagina_layout = {
+
+            iniciar: function () {
+                pagina_layout.carregarControles();
+                pagina_layout.carregarEventos();
+            },
+
+            carregarEventos: function () {
+                 
+                $('#btn-atualizar-perfil').on('click', function (e) {
+                    e.preventDefault();
+                    alert('testes');
+                        window.location.href = 'Perfil.html';
+                });
+
+                $('.bootstrap-datepicker').datepicker({
+                    format: 'dd/mm/yyyy',
+                    language: 'pt-BR',
+                    orientation: 'bottom'
+                }).mask("99/99/9999");
+
+                $('#modal').on('hidden.bs.modal', function () {
+                    $(this).find(".modal-body").html("");
+                });
+
+            },
+
+              CarregarLogoCorretor: function (elName) {
+
+
+
+              }
+        };
+    </script>
+</body>
+</html>

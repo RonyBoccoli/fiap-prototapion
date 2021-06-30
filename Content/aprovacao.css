@@ -1,0 +1,138 @@
+/******** FONTES E TEXTOS *********/
+.titulo-aprovacao {
+    margin-top: 30px;
+}
+
+    .titulo-aprovacao h3 {
+        text-align: center;
+        font-weight: 300;
+        color: #3a3a3a;
+        font-style: italic;
+    }
+
+    .titulo-aprovacao h4 {
+        text-align: center;
+        color: #3a3a3a;
+    }
+
+.filtro-aprovacao a:hover {
+    color: #fff;
+}
+
+/******** GERAL *********/
+.form-aprovacao input {
+    font-size: 14px;
+}
+
+.form-aprovacao label {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.tabela-aprovacao {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+    .tabela-aprovacao th {
+        text-align: center;
+        background-color: #1267dc;
+        color: white;
+    }
+
+    .tabela-aprovacao td {
+        line-height: 2;
+    }
+
+    .tabela-aprovacao a:hover {
+        color: white;
+    }
+
+.dropdown-aprovacao {
+    padding: 20px;
+}
+
+/******** DICAS *********/
+.painel-dicas {
+    margin-top: 30px;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+}
+
+    .painel-dicas:hover {
+        box-shadow: 0px 0px 30px rgba(0,0,0,0.2);
+        /*(30, 160, 251)*/
+    }
+
+    .painel-dicas .panel-heading {
+        padding: 20px 10px;
+    }
+
+        .painel-dicas .panel-heading .fa {
+            margin-top: 10px;
+            font-size: 58px;
+        }
+
+    .painel-dicas .list-group-item {
+        color: #777777;
+        border-bottom: 1px solid rgba(250, 250, 250, 0.5);
+    }
+
+        .painel-dicas .list-group-item:last-child {
+            border-bottom-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+        }
+
+        .painel-dicas .list-group-item:first-child {
+            border-top-right-radius: 0px;
+            border-top-left-radius: 0px;
+        }
+
+    .painel-dicas .panel-body {
+        background-color: #f0f0f0;
+        color: #777777;
+        padding: 20px;
+        margin: 0px;
+    }
+
+.dicas-conteudo {
+    font-size: 12px;
+    margin-bottom: 80px;
+    margin-top: 50px;
+}
+
+.imagem-dica {
+    background-image: url("../img/dica.png");
+    background-size: cover;
+    width: 100%;
+    height: 150px;
+}
+
+.panel-body a:hover {
+    color: white;
+}
+
+/******** RESPONSIVO *********/
+@media (max-width: 767px) {
+    .dropdown-aprovacao {
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .dropdown-aprovacao {
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .dropdown-aprovacao {
+        width: 500px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .dropdown-aprovacao {
+        width: 500px;
+    }
+}
